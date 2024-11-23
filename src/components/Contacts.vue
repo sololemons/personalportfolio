@@ -93,7 +93,7 @@
           <!-- Social Media Links -->
           <div class="flex flex-col items-center lg:items-start space-y-4">
             <a
-              href="https://linkedin.com/in/your-profile"
+              href="https://www.linkedin.com/in/solomon-ndimu-120a7b257/"
               target="_blank"
               class="flex items-center space-x-4 text-gray-300 hover:text-green-400 transition"
             >
@@ -104,20 +104,9 @@
               />
               <span>LinkedIn</span>
             </a>
+       
             <a
-              href="https://github.com/your-profile"
-              target="_blank"
-              class="flex items-center space-x-4 text-gray-300 hover:text-green-400 transition"
-            >
-              <img
-                :src="githubIcon"
-                alt="GitHub"
-                class="w-6 h-6 lg:w-8 lg:h-8"
-              />
-              <span>GitHub</span>
-            </a>
-            <a
-              href="https://twitter.com/your-profile"
+              href="https://x.com/ndimuuu_"
               target="_blank"
               class="flex items-center space-x-4 text-gray-300 hover:text-green-400 transition"
             >
@@ -129,7 +118,7 @@
               <span>Twitter</span>
             </a>
             <a
-              href="https://wa.me/your-phone-number"
+              href="https://wa.me/+254706725681"
               target="_blank"
               class="flex items-center space-x-4 text-gray-300 hover:text-green-400 transition"
             >
