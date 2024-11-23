@@ -1,28 +1,26 @@
 <template>
   <div class="bg-black min-h-screen text-white">
-
     <!-- Navbar -->
     <Navbar />
 
     <!-- Main Content -->
-    <main class="p-8">
-  
+    <main class="p-4 md:p-8">
       <!-- Profile Section -->
       <section class="flex justify-center mt-28">
-        <div class="flex px-14 pt-8">
+        <div class="flex flex-col md:flex-row px-4 md:px-14 pt-8 items-center">
           <div
-            class="bg-black px-4 rounded-lg w-[700px] h-[530px] pt-8 border-gray-800 border-2 flex flex-col justify-between"
+            class="bg-black px-4 rounded-lg w-full md:w-[700px] h-auto md:h-[530px] pt-8 border-gray-800 border-2 flex flex-col justify-between"
           >
             <!-- Welcome Animation -->
             <div
-              class="text-center text-green-500 font-extrabold text-3xl mt-4 fadeInOut"
+              class="text-center text-green-500 font-extrabold text-xl md:text-3xl mt-4 fadeInOut"
             >
               Welcome to my portfolio
             </div>
 
             <!-- Profile Section -->
-            <div class="flex items-center space-x-6 pt-10">
-              <div class="w-80 h-80 rounded-full bg-slate-100 overflow-hidden border-4 border-green-600">
+            <div class="flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-6 pt-10">
+              <div class="w-40 h-40 md:w-80 md:h-80 rounded-full bg-slate-100 overflow-hidden border-4 border-green-600">
                 <img
                   src="@/assets/Solomon.jpg"
                   alt="Profile Picture"
@@ -30,23 +28,25 @@
                 />
               </div>
 
-              <div>
-                <h1 class="text-white text-3xl font-extrabold italic">Solomon Ndimu Ngandu</h1>
+              <div class="text-center md:text-left">
+                <h1 class="text-white text-2xl md:text-3xl font-extrabold italic">
+                  Solomon Ndimu Ngandu
+                </h1>
               </div>
             </div>
 
             <!-- Download Button -->
-            <div class="flex px-10 pb-6 mt-6">
+            <div class="flex justify-center md:justify-start px-4 md:px-10 pb-6 mt-6">
               <a
                 href="@/assets/your_cv.pdf"
                 download="Solomon_CV"
-                class="bg-green-600 text-white px-6 py-3 rounded-md text-lg font-semibold hover:bg-green-700 transition duration-300 flex items-center space-x-2 focus:outline-none focus:ring-4 focus:ring-green-500"
+                class="bg-green-600 text-white px-6 py-3 rounded-md text-sm md:text-lg font-semibold hover:bg-green-700 transition duration-300 flex items-center space-x-2 focus:outline-none focus:ring-4 focus:ring-green-500"
               >
                 <!-- Icon Before Text -->
                 <img
                   src="@/assets/downloadbutton.png"
                   alt="Download Icon"
-                  class="w-6 h-6"
+                  class="w-5 h-5 md:w-6 md:h-6"
                 />
                 <span>Download CV</span>
               </a>
@@ -54,7 +54,7 @@
           </div>
         </div>
       </section>
-      
+
       <!-- About Section -->
       <section id="about" class="scroll-mt-16">
         <About />
@@ -89,7 +89,6 @@
       <section id="contacts" class="scroll-mt-16">
         <Contacts />
       </section>
-
     </main>
   </div>
 </template>
