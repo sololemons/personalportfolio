@@ -38,7 +38,7 @@
             <!-- Download Button -->
             <div class="flex justify-center md:justify-start px-4 md:px-10 pb-6 mt-6">
               <a
-                href="@/assets/your_cv.pdf"
+                href="@/assets/Ngandu RESUME.pdf"
                 download="Solomon_CV"
                 class="bg-green-600 text-white px-6 py-3 rounded-md text-sm md:text-lg font-semibold hover:bg-green-700 transition duration-300 flex items-center space-x-2 focus:outline-none focus:ring-4 focus:ring-green-500"
               >
