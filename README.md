@@ -7,7 +7,7 @@ A modern, responsive portfolio website showcasing my skills, projects, and inter
 
 ## Live Demo
 
-Check out the live demo here!
+https://personalportfolio-73dvixjrx-sololemons-projects.vercel.app/
 
 ## Features
 
@@ -71,8 +71,9 @@ The website adjusts seamlessly across different screen sizes:
 - **Mobile**: Stacked layout with easy navigation and touch-friendly interactions.
 
 ## Live Demo
-
+https://personalportfolio-73dvixjrx-sololemons-projects.vercel.app/
 Check out the live demo here!
+I used Vercel App to host i hope Thats okay .And in the Experience Section i used placeholders beacuse am not that experienced because am just a student but i aspire to reach those levels of being experienced and i will use this scholarship as  a Building block in reaching those levels
 
 ```
 
