@@ -63,7 +63,7 @@ const languages = [
   },
   {
     name: 'Python',
-    proficiency: 85,
+    proficiency: 45,
     color: '#306998',
     icon: 'fab fa-python',
   },
@@ -118,8 +118,8 @@ circle {
 
 /* Responsive Hover Effects */
 .group:hover svg circle {
-  stroke-width: 3; /* Increase stroke width on hover */
-  stroke-dashoffset: 100; /* Reset circle progress when hovered */
+  stroke-width: 3; 
+  stroke-dashoffset: 100; 
 }
 
 .group:hover .absolute {
@@ -134,7 +134,7 @@ circle {
   transform: translateY(-5px); /* Slight lift effect for text on hover */
 }
 
-/* Icon Styling */
+
 i {
   font-size: 1.5rem; /* You can adjust the size of the icons */
 }

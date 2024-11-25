@@ -138,11 +138,11 @@
   <script setup>
 
   
-  // Icons
-  const linkedinIcon = new URL("@/assets/linkedin y.png", import.meta.url).href;
-  const githubIcon = new URL("@/assets/github.png", import.meta.url).href;
-  const twitterIcon = new URL("@/assets/twitter.png", import.meta.url).href;
-  const whatsappIcon = new URL("@/assets/whatsapp.png", import.meta.url).href;
+  //INITIALIZE AFTER IMPRORTING ICONS
+
+  const twitterIcon = new URL("@/assets/images/XTwitter.png", import.meta.url).href;
+  const whatsappIcon = new URL("@/assets/images/whatsapp.png", import.meta.url).href;
+  const linkedinIcon = new URL("@/assets/images/linkedinn.png", import.meta.url).href;
   </script>
   
   <style scoped>

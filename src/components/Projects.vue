@@ -44,7 +44,7 @@
       description: "A responsive personal portfolio built with Vue.js and Tailwind CSS.",
       image:
         "https://marketplace.canva.com/EAFf9pTh3kg/1/0/1131w/canva-black-and-white-simple-portfolio-cover-page-BRYRBdWQKVU.jpg",
-      link: "https://github.com/sololemons/Personal-Portfolio--PEER-GROUP-16.git",
+      link: "https://github.com/sololemons/personalportfolio-Peer-Group-16.git",
     },
     {
       title: "E-Commerce Platform",

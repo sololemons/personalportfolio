@@ -22,7 +22,7 @@
             <div class="flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-6 pt-10">
               <div class="w-40 h-40 md:w-80 md:h-80 rounded-full bg-slate-100 overflow-hidden border-4 border-green-600">
                 <img
-                  src="@/assets/Solomon.jpg"
+                  src="@/assets/images/Solomon.jpg"
                   alt="Profile Picture"
                   class="w-full h-full object-cover"
                 />
@@ -38,13 +38,13 @@
             <!-- Download Button -->
             <div class="flex justify-center md:justify-start px-4 md:px-10 pb-6 mt-6">
               <a
-                href="@/assets/Ngandu RESUME.pdf"
-                download="Solomon_CV"
+                :href="cvLink"
+                download="Solomon_CV.pdf"
                 class="bg-green-600 text-white px-6 py-3 rounded-md text-sm md:text-lg font-semibold hover:bg-green-700 transition duration-300 flex items-center space-x-2 focus:outline-none focus:ring-4 focus:ring-green-500"
               >
                 <!-- Icon Before Text -->
                 <img
-                  src="@/assets/downloadbutton.png"
+                  src="@/assets/images/downloadbutton.png"
                   alt="Download Icon"
                   class="w-5 h-5 md:w-6 md:h-6"
                 />
@@ -89,11 +89,14 @@
       <section id="contacts" class="scroll-mt-16">
         <Contacts />
       </section>
+      <section class="scroll-mt-16">
+        <Footer/>
+      </section>
     </main>
   </div>
 </template>
 
-<script setup>
+<script setup> 
 import About from '@/components/About.vue';
 import Projects from '@/components/Projects.vue';
 import Navbar from '@/components/Navbar.vue';
@@ -102,12 +105,17 @@ import Education from '@/components/Education.vue';
 import Interests from '@/components/Interests.vue';
 import Experience from '@/components/Experience.vue';
 import Contacts from '@/components/Contacts.vue';
+import Footer from '@/components/Footer.vue';
+
+import cvPath from '@/assets/files/Ngandu RESUME.pdf';
+const cvLink = cvPath;
 </script>
 
 <style scoped>
 /* Define keyframes for fade-in and fade-out */
 @keyframes fadeInOut {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 0;
   }
   50% {
@@ -117,21 +125,20 @@ import Contacts from '@/components/Contacts.vue';
 
 /* Adjust scroll alignment for fixed navbar */
 .scroll-mt-16 {
-  scroll-margin-top: 64px; /* Adjust this value to match the height of your fixed navbar */
+  scroll-margin-top: 64px;
 }
 
 html {
-  scroll-behavior: smooth; /* Enables smooth scrolling */
+  scroll-behavior: smooth; 
 }
 
-/* Apply the animation to the welcome text */
+
 .fadeInOut {
   animation: fadeInOut 3s infinite;
 }
 
-/* Button hover and focus styles */
 a:focus {
-  outline: 2px solid #4ade80; /* Green outline */
+  outline: 2px solid #4ade80; 
   outline-offset: 2px;
 }
 </style>

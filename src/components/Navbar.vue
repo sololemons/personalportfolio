@@ -64,6 +64,6 @@ a {
 }
 
 a:hover {
-  color: #4ade80; /* Change to green when hovered */
+  color: #4ade80;
 }
 </style>

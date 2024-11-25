@@ -1,7 +1,7 @@
 <template>
   <section class="bg-black text-white py-12 border-2 border-gray-600 mt-10">
     <div class="container mx-auto px-6 flex flex-col lg:flex-row">
-      <!-- Event Titles on the Left -->
+      <!-- Event Titles  -->
       <div class="lg:w-1/4 w-full space-y-4 mb-6 lg:mb-0">
         <h2 class="text-3xl font-bold text-green-400 mb-8">Education Events</h2>
         <!-- List of Events -->
@@ -15,7 +15,7 @@
         </div>
       </div>
 
-      <!-- Event Details on the Right -->
+      <!-- Event Details  -->
       <div class="lg:w-3/4 w-full pl-0 lg:pl-8 border-s-0 lg:border-s-4 transition-all duration-500 ease-in-out">
         <div v-if="selectedEvent !== null" class="event-details">
           <h3 class="text-2xl font-semibold text-green-400">{{ events[selectedEvent].title }}</h3>
@@ -41,30 +41,30 @@
 </template>
 
 <script setup>
-// Importing the `ref` function from Vue
+
 import { ref } from 'vue';
 
-// Import the PDF asset directly using `import`
-import NganduCV from '@/assets/Ngandu RESUME.pdf'; // Adjust the path based on where your PDF is located
+// Import the PDF asset `
+import NganduCV from '@//assets/files/Ngandu RESUME.pdf'; // Adjust the path based on where your PDF is located
 
 // Event data (Title, details, and download link)
 const events = [
   {
     title: 'High School',
     details: 'Completed high school with excellent performance and received the KCSE certificate. I Attended 🌇Baricho High School.',
-    link: NganduCV, // Now using the imported PDF path
+    link: NganduCV, 
     linkText: 'CV',
   },
   {
     title: 'Campus Degree',
     details: 'Earned a degree 👨‍🎓 in Computer Science from Dedan Kimathi University of Technology. Engaged in multiple tech events and research projects.',
-    link: NganduCV, // Now using the imported PDF path
+    link: NganduCV, 
     linkText: 'CV',
   },
   {
     title: 'Hackathon Merit Award',
     details: 'Won a merit award in a hackathon for: 🥇Dekut Hack .🥈Safaricom Hackathon. 🥉Google I/O Fest',
-    link: NganduCV, // Now using the imported PDF path
+    link: NganduCV, 
     linkText: 'CV',
   },
   {
@@ -76,13 +76,13 @@ const events = [
   {
     title: 'Tech Events',
     details: 'I Got an Opportunity to attend Tech Events in my 4 Years in Campus. I attended Events such as: Devfest. Google I/O. Origin Fest. Safaricom Hacks. Huawei Hackathons. Many More Mind-blowing Events',
-    link: NganduCV, // Now using the imported PDF path
+    link: NganduCV, 
     linkText: 'CV',
   },
-  // Add other events...
+ 
 ];
 
-// Using `ref` to create a reactive reference for the selected event
+
 const selectedEvent = ref(null);
 
 // Method to select an event and show its details

@@ -1,4 +1,5 @@
 <template>
+
     <section class="flex justify-center pt-12 px-4">
       <div class="bg-black px-6 py-8 rounded-lg shadow-md w-full max-w-[700px]">
         <h2 class="text-3xl font-bold text-center text-green-400">About Me</h2>
@@ -11,6 +12,6 @@
     </section>
   </template>
   
-  <script setup>
-  </script>
+  <script setup></script>
+  <style scooped> </style>
   
